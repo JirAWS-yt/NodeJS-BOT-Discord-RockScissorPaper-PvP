@@ -62,7 +62,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
 
     var result = checkVictory(current_game);
 
-    if(!result) {
+    if(result == undefined) {
         console.error("Something wrong happened...");
         return;
     }
